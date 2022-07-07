@@ -1,0 +1,86 @@
+#' Province dataset example
+#' 
+#' @docType data
+#' @name province
+#' @usage province
+#' @format This data set allows to estimate  the relationships among Health  (\code{HEALTH}), 
+#' Education and training (\code{EDU}) and Economic well-being (\code{ECOW}) 
+#' in the Italian provinces using a subset of the indicators collected by the Italian Statistical 
+#' Institute (ISTAT) to measure equitable and sustainable well-being (BES, from the Italian Benessere 
+#' Equo e Sostenibile) in territories. Data refers to the 2019 edition of the BES report (ISTAT, 2018, 
+#' 2019a, 2019b). A subset of 16 indicators (manifest variables) are observed on the 110 Italian provinces 
+#' and metropolitan cities (i.e. at NUTS3 level) to measure the latent variables \code{HEALTH}, \code{EDU} 
+#' and \code{ECOW}. The interest in such an application concerns both advances in knowledge 
+#' about the dynamics producing the well-being outcomes at local level (multiplier effects or trade-offs) 
+#' and a more complete evaluation of regional inequalities of well-being.
+#' 
+#' Data Strucuture
+#' 
+#' A data frame with 110 Italian provinces and metropolitan cities and 16 variables (i.e., indicators) related to 
+#' three latent variables: Health (3 indicators), Education and training (7 indicators), and Economic well-being 
+#' (6 indicators).
+#' 
+#'
+#' Manifest variables description for each latent variable:
+#'
+#'\itemize{
+#'\item{LV1} {Education and training} (\code{EDU})
+#'\itemize{
+#'\item{MV1 \code{EDU1}   (O.2.2)}: {people with at least upper secondary education level (25-64 years old)}
+#'\item{MV2 \code{EDU2}   (O.2.3)}: {people having completed tertiary education (30-34 years old)}
+#'\item{MV3 \code{EDU3}   (O.2.4)}: {first-time entry rate to university by cohort of upper secondary graduates}
+#'\item{MV4 \code{EDU4}   (O.2.5aa)}: {people not in education, employment or training (Neet)}
+#'\item{MV5 \code{EDU5}   (O.2.6)}: {ratio of people aged 25-64 years participating in formal 
+#'or non-formal education to the total people aged 25-64 years}
+#'\item{MV6  \code{EDU6}  (O_2.7_2.8)}: {scores obtained in the tests of functional skills of the 
+#'students in the II classes of upper secondary education}
+#'\item{MV7  \code{EDU7} (O_2.7_2.8_A)}: {Differences between males and females students in the level of 
+#'numeracy and literacy}
+#'}
+#'\item{LV2} {Economic wellbeing} (\code{ECOW})
+#'\itemize{
+#'\item{MV8  \code{ECOW1} (O.4.1)}: {per capita disposable income}
+#'\item{MV9  \code{ECOW2} (O.4.4aa)}: {pensioners with low pension amount}
+#'\item{MV10  \code{ECOW3} (O.4.5)}: {per capita net wealth}
+#'\item{MV11  \code{ECOW4} (O.4.6aa)}: {rate of bad debts of the bank loans to families}
+#'\item{MV12  \code{ECOW5} (O.4.2)}: {average annual salary of employees}
+#'\item{MV13  \code{ECOW6} (O.4.3)}: {average annual amount of pension income per capita}
+#'}
+#'#'\item{LV3} {Health} (\code{HEALTH})
+#'\itemize{
+#'\item{MV14 \code{HEALTH1} (O.1.1F)}: {life expectancy at birth of females}
+#'\item{MV15 \code{HEALTH2} (O.1.1M)}: {life expectancy at birth of males}
+#'\item{MV16 \code{HEALTH3} (O.1.2.MEAN_aa)}: {infant mortality rate}
+#'}
+#'}
+#'
+#' For a full description of the variables, see table 3 of Davino et al. (2020).
+#'
+#'
+#' @references Davino, C., Dolce, P., Taralli, S. and Vistocco, D. (2020). Composite-based 
+#' path modeling for conditional quantiles prediction. An application to assess 
+#' health differences at local level in a well-being perspective.
+#' \emph{Social Indicators Research}, doi:10.1007/s11205-020-02425-5.
+#'
+#' @references Davino, C., Dolce, P., Taralli, S., Esposito Vinzi, V. (2018). A quantile 
+#' composite-indicator approach for the measurement of equitable and sustainable well-being: 
+#' A case study of the italian provinces. \emph{Social Indicators Research}, \bold{136}, pp. 999--1029, 
+#' doi: 10.1007/s11205-016-1453-8
+#'
+#' @references Davino, C., Dolce, P., Taralli, S. (2017). Quantile composite-based model: 
+#' A recent advance in pls-pm. A preliminary approach to handle heterogeneity in the measurement 
+#' of equitable and sustainable well-being. In Latan, H. and Noonan, R. (eds.), \emph{Partial Least 
+#' Squares Path Modeling: Basic Concepts, Methodological Issues and Applications} (pp. 81--108). 
+#' Cham: Springer.  
+#'
+#'@references ISTAT. (2019a). Misure del Benessere dei territori. Tavole di dati. Rome, 
+#'Istat. \url{https://www.istat.it/it/archivio/230627}.
+#'
+#'@references ISTAT. (2019b). Le differenze territoriali di benessere - Una lettura a livello 
+#'provinciale. Rome, Istat.\url{https://www.istat.it/it/archivio/233243}.
+#'
+#'@references ISTAT. (2018). Bes report 2018: Equitable and sustainable well-being in Italy. 
+#'Rome, Istat. \url{https://www.istat.it/en/archivio/225140}.
+#'
+#' @keywords datasets
+NULL
